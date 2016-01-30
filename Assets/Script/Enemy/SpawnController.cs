@@ -12,11 +12,6 @@ public class SpawnController : MonoBehaviour {
 			LvUp();
 		}
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
-		
-	}
 
 	void Lv1(){
 		enemySpawner.emissionRate = 0.2f;
@@ -24,8 +19,8 @@ public class SpawnController : MonoBehaviour {
 	}
 
 	public void LvUp(){
-		float stats = Random.Range(0,1);
-		Debug.Log(stats);
+		float stats = Random.Range(0,2);
+		//Debug.Log(stats);
 		if(stats<0.5f){
 			enemySpawner.emissionRate = enemySpawner.emissionRate*2;
 		}else{

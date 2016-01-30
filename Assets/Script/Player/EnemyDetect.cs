@@ -18,6 +18,6 @@ public class EnemyDetect : MonoBehaviour {
 	void OnParticleCollision(GameObject particle){
 		//DestroyObject(particle);
 		isSpawn = true;
-		Debug.Log("particle");
+		//Debug.Log("particle");
 	}
 }

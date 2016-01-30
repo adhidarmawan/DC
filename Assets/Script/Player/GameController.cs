@@ -10,13 +10,15 @@ public class GameController : MonoBehaviour {
 	public int lvUpBase;
 	public GameObject popUpGameOver;
 	public GameObject popUpGameClear;
+	public InGame inGame;
 	//enemies
 	public EnemyDetect enemyDetect;
-	public SpawnedEnemies spawnEnemies;
+	public SpawnerEnemy spawnEnemies;
 	//
 	// Use this for initialization
 	void Start () {
 		SupernaturalReader.AssessGhosts();
+
 	}
 	
 	// Update is called once per frame
@@ -27,7 +29,7 @@ public class GameController : MonoBehaviour {
 	void DoSpawn(){
 		if(enemyDetect.isSpawn){
 			enemyDetect.isSpawn=false;
-			//spawnEnemies
+			spawnEnemies.SpawnEnemies();
 		}
 	}
 	void LvUp(){
@@ -41,8 +43,10 @@ public class GameController : MonoBehaviour {
 			}
 		}
 		if(watch.isMorning){
+			spawnEnemies.gameObject.SetActive(false);
 			popUpGameClear.SetActive(true);
 			enemies.gameObject.SetActive(false);
+			inGame.CheckStage();
 		}
 	}
 }

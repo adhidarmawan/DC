@@ -3,18 +3,14 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	public bool isAttack=false;
 
 	void OnMouseDown(){
-		Debug.Log("Clicked");
+		Debug.Log("Exorcised");
+		StaticParameter.ghostEradicated++;
+		Destroy(this.gameObject);
 	}
-
+	public void EnemyAttack(){
+		Debug.Log("attack");
+	}
 }
