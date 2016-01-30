@@ -23,5 +23,8 @@ public class EnemyDetect : MonoBehaviour {
 	void OnColliderEnter(Collider collider){
 		Debug.Log("collider");
 	}
-
+	void OnParticleCollision(GameObject particle){
+		DestroyObject(particle);
+		Debug.Log("particle");
+	}
 }
