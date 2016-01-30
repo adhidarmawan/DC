@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StaticParameter {
+public static class StaticParameter {
 
-	public int baseLv;
-	public int ghostEradicated;
-	public int stageLv;
+	public static int baseLv;
+	public static int ghostEradicated;
+	public static int stageLv;
 
 }
