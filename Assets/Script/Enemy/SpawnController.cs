@@ -8,6 +8,9 @@ public class SpawnController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Lv1 ();
+		for(int i=0; i<StaticParameter.stageLv;i++){
+			LvUp();
+		}
 	}
 	
 	// Update is called once per frame
@@ -21,8 +24,13 @@ public class SpawnController : MonoBehaviour {
 	}
 
 	public void LvUp(){
-		enemySpawner.emissionRate = enemySpawner.emissionRate*2;
-		enemySpawner.startSpeed = enemySpawner.startSpeed*2;
+		float stats = Random.Range(0,1);
+		Debug.Log(stats);
+		if(stats<0.5f){
+			enemySpawner.emissionRate = enemySpawner.emissionRate*2;
+		}else{
+			enemySpawner.startSpeed = enemySpawner.startSpeed*2;
+		}
 	}
 	public void Stop(){
 		enemySpawner.enableEmission=false;
