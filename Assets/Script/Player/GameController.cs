@@ -10,13 +10,27 @@ public class GameController : MonoBehaviour {
 	public int lvUpBase;
 	public GameObject popUpGameOver;
 	public GameObject popUpGameClear;
+	//enemies
+	public EnemyDetect enemyDetect;
+	public SpawnedEnemies spawnEnemies;
+	//
 	// Use this for initialization
 	void Start () {
-	
+		SupernaturalReader.AssessGhosts();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		LvUp();
+		DoSpawn();
+	}
+	void DoSpawn(){
+		if(enemyDetect.isSpawn){
+			enemyDetect.isSpawn=false;
+			//spawnEnemies
+		}
+	}
+	void LvUp(){
 		if(watch.isTimeIncrease){
 			watch.isTimeIncrease=false;
 			lvUp++;

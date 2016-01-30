@@ -45,12 +45,21 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\Effect\CustomAnimation.cs" />
      <Compile Include="Assets\Script\Enemy\EnemyBehaviour.cs" />
      <Compile Include="Assets\Script\Enemy\SpawnController.cs" />
+     <Compile Include="Assets\Script\Enemy\SpawnedEnemies.cs" />
      <Compile Include="Assets\Script\Player\EnemyDetect.cs" />
      <Compile Include="Assets\Script\Player\GameController.cs" />
      <Compile Include="Assets\Script\Player\StaticParameter.cs" />
      <Compile Include="Assets\Script\Player\Watch.cs" />
+     <Compile Include="Assets\Script\System\AggressiveSupernatural.cs" />
+     <Compile Include="Assets\Script\System\GeneralManager.cs" />
+     <Compile Include="Assets\Script\System\Manager.cs" />
+     <Compile Include="Assets\Script\System\PassiveSupernatural.cs" />
+     <Compile Include="Assets\Script\System\SupernaturalManager.cs" />
+     <Compile Include="Assets\Script\System\SupernaturalReader.cs" />
+     <Compile Include="Assets\Script\System\Supernaturals.cs" />
      <None Include="Assets\Resources\Basic Game Pack\Basic Game Pack\Text Effect PSD\FREE Halloween Styles by Koolgfx\Instructions.txt" />
      <None Include="Assets\Resources\Basic Game Pack\Basic Game Pack\Text Effect PSD\fantasy-style-might\license.txt" />
      <None Include="Assets\Resources\Basic Game Pack\Basic Game Pack\Text Effect PSD\fantasy-style-crumb\license.txt" />
