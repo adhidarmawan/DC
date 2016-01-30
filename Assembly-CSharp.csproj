@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\Effect\CustomAnimation.cs" />
+     <Compile Include="Assets\Script\Enemy\Enemy.cs" />
      <Compile Include="Assets\Script\Enemy\EnemyBehaviour.cs" />
      <Compile Include="Assets\Script\Enemy\SpawnController.cs" />
      <Compile Include="Assets\Script\Enemy\SpawnedEnemies.cs" />
