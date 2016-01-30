@@ -3,28 +3,21 @@ using System.Collections;
 
 public class EnemyDetect : MonoBehaviour {
 
-	public Collision PlayerRadius;
-	public Collider PlayerCollider;
+	public bool isSpawn;
 
 	// Use this for initialization
 	void Start () {
-	
+		isSpawn =false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 	}
-
-	void OnCollisionEnter(Collision collision){
-		Debug.Log("collison");
-	}
-
-	void OnColliderEnter(Collider collider){
-		Debug.Log("collider");
-	}
+	
 	void OnParticleCollision(GameObject particle){
 		//DestroyObject(particle);
+		isSpawn = true;
 		Debug.Log("particle");
 	}
 }
