@@ -11,6 +11,7 @@ public class Watch : MonoBehaviour {
 	public bool isTimeIncrease;
 	public int morningTime;
 	public bool isMorning;
+	public bool isStop;
 
 	// Use this for initialization
 	void Start () {
@@ -18,11 +19,12 @@ public class Watch : MonoBehaviour {
 		watch.hour = 20;
 		watch.minute = 0;
 		isMorning = false;
+		isStop = false;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if(isMorning!=true){
+		if(isMorning!=true&&isStop!=true){
 			if(watch.hour!=morningTime){
 				CountTime();
 			}else{

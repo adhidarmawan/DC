@@ -1,18 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\System\InGame.cs">
     <Files>
-      <File FileName="Assets\Script\Player\Watch.cs" Line="29" Column="22" />
-      <File FileName="Assets\Script\Enemy\SpawnController.cs" Line="14" Column="3" />
-      <File FileName="Assets\Script\Player\GameController.cs" Line="48" Column="24" />
+      <File FileName="Assets\Script\Sound\BGMPlayer.cs" Line="18" Column="43" />
+      <File FileName="Assets\Script\Enemy\Enemy.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\Player\StaticParameter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Player\EnemyDetect.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Effect\CustomAnimation.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Enemy\SpawnedEnemies.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Enemy\Enemy.cs" Line="14" Column="23" />
-      <File FileName="Assets\Script\Enemy\SpawnerEnemy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\System\Title.cs" Line="9" Column="25" />
-      <File FileName="Assets\Script\System\InGame.cs" Line="12" Column="37" />
+      <File FileName="Assets\Script\System\PopScores.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\System\Title.cs" Line="55" Column="1" />
+      <File FileName="Assets\Script\Player\GameController.cs" Line="29" Column="50" />
+      <File FileName="Assets\Script\System\InGame.cs" Line="7" Column="29" />
+      <File FileName="Assets\Script\Player\Watch.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\System\Scores.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Sound\SoundManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\System\Tutorial.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

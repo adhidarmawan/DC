@@ -25,6 +25,13 @@ public class GameController : MonoBehaviour {
 	void FixedUpdate () {
 		LvUp();
 		DoSpawn();
+		//detect Game Over
+		if(spawnEnemies.isAttack&&watch.isMorning!=true){
+			watch.isStop = true;
+			popUpGameOver.SetActive(true);
+			if(StaticParameter.highScore<StaticParameter.lastScore) StaticParameter.highScore = StaticParameter.lastScore;
+			enemies.gameObject.SetActive(false);
+		}
 	}
 	void DoSpawn(){
 		if(enemyDetect.isSpawn){
@@ -45,6 +52,7 @@ public class GameController : MonoBehaviour {
 		if(watch.isMorning){
 			spawnEnemies.gameObject.SetActive(false);
 			popUpGameClear.SetActive(true);
+			if(StaticParameter.highScore<StaticParameter.lastScore) StaticParameter.highScore = StaticParameter.lastScore;
 			enemies.gameObject.SetActive(false);
 			inGame.CheckStage();
 		}
